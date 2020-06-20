@@ -19,3 +19,17 @@
     
 - Numpy
 
+## CH3 Linked List
+- 鏈結串列 Listed List
+    - 元素是散佈在記憶體的各個地方
+    - 讀取資料使用sequential access ，搜尋資料必須重頭開始搜尋資料
+    - 節點分為兩區域:資料區、指標區
+
+- Single Listed List
+    - 指標區指向下一個節點元素
+    - 只能往後搜尋
+
+- Double Listed List
+    - 兩個指標區，1.指向前一個節點 2.指向後一個節點
+    - 可以往前往後搜尋
+

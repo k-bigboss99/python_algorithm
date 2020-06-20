@@ -1,4 +1,5 @@
 # ch3_5.py
+# 在鏈結串列中間插入一個新的節點
 class Node():
     ''' 節點 '''
     def __init__(self, data=None):

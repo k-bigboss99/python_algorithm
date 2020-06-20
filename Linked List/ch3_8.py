@@ -1,4 +1,5 @@
 # ch3_8.py
+# 建立雙向鏈結串列
 class Node():
     ''' 節點 '''
     def __init__(self, data=None):

@@ -1,4 +1,5 @@
-# ch3_4.py
+# ch3_2.py
+# 建立鏈結串列class
 class Node():
     ''' 節點 '''
     def __init__(self, data=None):
@@ -17,17 +18,6 @@ class Linked_list():
             print(ptr.data)         # 列印節點
             ptr = ptr.next          # 移動指標到下一個節點
 
-    def ending(self, newdata):
-        ''' 在串列末端插入新節點 '''
-        new_node = Node(newdata)    # 建立新節點
-        if self.head == None:       # 如果是True, 表示鏈結串列是空的
-            self.head = new_node    # 所以head就可以直接指向此新節點
-            return
-        last_ptr = self.head        # 設定最後指標是鏈結串列頭部
-        while last_ptr.next:        # 移動指標直到最後
-            last_ptr = last_ptr.next
-        last_ptr.next = new_node    # 將最後一個節點的指標指向新節點
-
 link = Linked_list()
 link.head = Node(5)
 n2 = Node(15)                       # 節點 2
@@ -35,11 +25,7 @@ n3 = Node(25)                       # 節點 3
 link.head.next = n2                 # 節點 1 指向節點 2
 n2.next = n3                        # 節點 2 指向節點 3
 link.print_list()                   # 列印鏈結串列 link
-print("新的鏈結串列")
-link.ending(100)                    # 在串列末端插入新的節點
-link.print_list()                   # 列印新的鏈結串列 link
-
-
+    
 
 
 

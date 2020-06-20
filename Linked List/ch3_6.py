@@ -1,4 +1,5 @@
 # ch3_6.py
+# 在鏈結串列中移除移除指定的節點
 class Node():
     ''' 節點 '''
     def __init__(self, data=None):
